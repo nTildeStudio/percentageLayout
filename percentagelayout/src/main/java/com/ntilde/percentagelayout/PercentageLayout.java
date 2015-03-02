@@ -62,7 +62,9 @@ public class PercentageLayout{
 		}
 		else if(view instanceof PGridView){
 			styledAttrs=context.getTheme().obtainStyledAttributes(attrs,R.styleable.PGridView,0,0);
-		}
+		} if(view instanceof PFrameLayout){
+            styledAttrs=context.getTheme().obtainStyledAttributes(attrs,R.styleable.PFrameLayout,0,0);
+        }
 		
 		try{
 			if(view instanceof PLinearLayout){
@@ -124,7 +126,16 @@ public class PercentageLayout{
 				
 				pHeight=styledAttrs.getFloat(R.styleable.PGridView_gv_percentage_height, -1);
 				pWidth=styledAttrs.getFloat(R.styleable.PGridView_gv_percentage_width, -1);
-			}
+			}else if(view instanceof PFrameLayout){
+                float pPadding=styledAttrs.getFloat(R.styleable.PFrameLayout_pfl_percentage_padding, -1);
+                pPaddingLeft=styledAttrs.getFloat(R.styleable.PFrameLayout_pfl_percentage_padding_left, pPadding);
+                pPaddingTop=styledAttrs.getFloat(R.styleable.PFrameLayout_pfl_percentage_padding_top, pPadding);
+                pPaddingRight=styledAttrs.getFloat(R.styleable.PFrameLayout_pfl_percentage_padding_right, pPadding);
+                pPaddingBottom=styledAttrs.getFloat(R.styleable.PFrameLayout_pfl_percentage_padding_bottom, pPadding);
+
+                pHeight=styledAttrs.getFloat(R.styleable.PFrameLayout_pfl_percentage_height, -1);
+                pWidth=styledAttrs.getFloat(R.styleable.PFrameLayout_pfl_percentage_width, -1);
+            }
 		}
 		finally{
 			styledAttrs.recycle();

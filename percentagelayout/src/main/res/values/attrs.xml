@@ -44,6 +44,15 @@
         <attr name="plv_percentage_height" format="float" />
         <attr name="plv_percentage_width" format="float" />
     </declare-styleable>
+    <declare-styleable name="PFrameLayout">
+        <attr name="pfl_percentage_padding" format="float" />
+        <attr name="pfl_percentage_padding_left" format="float" />
+        <attr name="pfl_percentage_padding_right" format="float" />
+        <attr name="pfl_percentage_padding_top" format="float" />
+        <attr name="pfl_percentage_padding_bottom" format="float" />
+        <attr name="pfl_percentage_height" format="float" />
+        <attr name="pfl_percentage_width" format="float" />
+    </declare-styleable>
    <declare-styleable name="PGridView">
         <attr name="gv_percentage_padding" format="float" />
         <attr name="gv_percentage_padding_left" format="float" />

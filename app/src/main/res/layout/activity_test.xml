@@ -1,0 +1,34 @@
+<com.ntilde.percentagelayout.PLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:pLayout="http://schemas.android.com/apk/res-auto"
+    tools:context="com.ntilde.percentageui.TestActivity"
+    tools:ignore="MergeRootFrame"
+    android:background="#222"
+    android:orientation="horizontal"
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    pLayout:pl_percentage_width="90"
+    pLayout:pl_percentage_height="90">
+
+    <com.ntilde.percentagelayout.PLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#F0F"
+        pLayout:pl_percentage_width="50"
+        pLayout:pl_percentage_height="50">
+        <com.ntilde.percentagelayout.PFrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            pLayout:pfl_percentage_width="99"
+            pLayout:pfl_percentage_height="99"/>
+    </com.ntilde.percentagelayout.PLinearLayout>
+
+    <com.ntilde.percentagelayout.PLinearLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#025"
+        pLayout:pl_percentage_width="30"
+        pLayout:pl_percentage_height="20" />
+</com.ntilde.percentagelayout.PLinearLayout>
