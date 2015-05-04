@@ -104,6 +104,21 @@
         	<enum name="positiveNumber" value="14"/>
         </attr>
     </declare-styleable>
-    
+
+    <declare-styleable name="PercentageLayout">
+        <attr name="percentage_width" format="float" />
+        <attr name="percentage_height" format="float" />
+        <attr name="percentage_padding" format="float" />
+        <attr name="percentage_padding_left" format="float" />
+        <attr name="percentage_padding_right" format="float" />
+        <attr name="percentage_padding_top" format="float" />
+        <attr name="percentage_padding_bottom" format="float" />
+        <attr name="percentage_margin" format="float" />
+        <attr name="percentage_margin_left" format="float" />
+        <attr name="percentage_margin_right" format="float" />
+        <attr name="percentage_margin_top" format="float" />
+        <attr name="percentage_margin_bottom" format="float" />
+        <attr name="percentage_absolute" format="boolean" />
+    </declare-styleable>
     
 </resources>
